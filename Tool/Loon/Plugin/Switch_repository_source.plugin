@@ -6,8 +6,8 @@
 #!system = iOS
 #!system_version = 
 #!loon_version = 3.2.1(372)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Switch.png
+#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Switch.png
 #!select = 仓库源, Bitbucket - 四网直连, GitLab - 电信联通直连, GitHub - 访问不畅
 #!date = 2024-04-21 02:37:51
 
@@ -16,9 +16,9 @@ DOMAIN-SUFFIX, gitlab.com, DIRECT
 DOMAIN-SUFFIX, bitbucket.org, DIRECT
 
 [Script]
-http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
-http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
-http-request ^https:\/\/bitbucket\.org\/luestr\/proxyresource\/raw\/main\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = Bitbucket换源
+http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
+http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
+http-request ^https:\/\/bitbucket\.org\/luestr\/proxyresource\/raw\/main\/ script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = Bitbucket换源
 
 [Mitm]
 hostname = gitlab.com, raw.githubusercontent.com, bitbucket.org

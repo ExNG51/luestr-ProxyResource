@@ -6,8 +6,8 @@
 #!system = iOS
 #!system_version = 
 #!loon_version = 3.2.1(372)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Douyu.png
+#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png
 #!date = 2024-07-29 21:43:28
 
 [Rule]
@@ -32,14 +32,14 @@ DOMAIN, stun1.qvb.qcloud.com, REJECT
 
 [Script]
 # 首页轮播图和视频流广告
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页轮播图和视频流广告
+http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页轮播图和视频流广告
 http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3
 
 # 首页直播间悬浮窗
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页直播间悬浮窗
+http-response ^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页直播间悬浮窗
 
 # 修改应用配置
-http-response ^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 修改应用配置
+http-response ^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 修改应用配置
 
 [Mitm]
 hostname = rtbapi.douyucdn.cn, apiv2.douyucdn.cn, venus.douyucdn.cn

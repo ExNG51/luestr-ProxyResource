@@ -6,8 +6,8 @@
 #!system = iOS
 #!system_version = 
 #!loon_version = 3.2.1(372)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MKZ.png
+#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MKZ.png
 #!date = 2024-07-18 21:07:01
 
 [Rule]
@@ -91,7 +91,7 @@ DOMAIN, plbslog.umeng.com, REJECT
 
 [Script]
 # 配置修改
-http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MKZ/MKZ_remove_ads.js, requires-body = true, tag = 配置修改
+http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path = https://raw.githubusercontent.com/luestr/ProxyResource/main/Resource/Script/MKZ/MKZ_remove_ads.js, requires-body = true, tag = 配置修改
 
 [Mitm]
 hostname = base.mkzcdn.com
