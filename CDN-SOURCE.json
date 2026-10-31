@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "publisherVersion": 1,
+  "source": {
+    "repository": "ExNG51/luestr-ProxyResource",
+    "commit": "82025c846f0dce0ec2266fd77cf57c3039d789b5",
+    "tree": "f9e711db776f9b9e28e2312654af1859d1a291a1"
+  },
+  "upstream": "FianW/ProxyResource",
+  "rulePaths": [
+    "Tool/Loon/Rule/1PasswordUS.list",
+    "Tool/Loon/Rule/AI.list",
+    "Tool/Loon/Rule/InternationalDownloadCDN.list"
+  ],
+  "companionPaths": [
+    "LICENSE.md",
+    "README.md"
+  ],
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "blob": "cbe5ad1670406e4402217edfb82d2c56af7e8631",
+      "bytes": 20849
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "5d0079ee561162b0e01a260f3b2900c4ee9f0def",
+      "bytes": 1004
+    },
+    {
+      "path": "Tool/Loon/Rule/1PasswordUS.list",
+      "mode": "100644",
+      "blob": "8d803dea9f586aedfba0b331d3cb3a0899a99eeb",
+      "bytes": 1436
+    },
+    {
+      "path": "Tool/Loon/Rule/AI.list",
+      "mode": "100644",
+      "blob": "24fb0c4c7bc3d983e1d82263d227362e331aef61",
+      "bytes": 1278
+    },
+    {
+      "path": "Tool/Loon/Rule/InternationalDownloadCDN.list",
+      "mode": "100644",
+      "blob": "4276e33346689874385606039ced1068852ba978",
+      "bytes": 7522
+    }
+  ],
+  "selection": "Original source blobs selected without modification."
+}
